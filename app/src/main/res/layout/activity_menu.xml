@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alexander.mytest2.MenuActivity"
+    android:background="#303F9F"
+
+    >
+
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/playerbtn"
+        android:layout_above="@+id/settingsbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#14c0c0c0"
+        android:src="@drawable/playerb"
+        android:scaleType="fitCenter"
+
+
+
+        />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/transferbtn"
+        android:layout_above="@+id/closebtn"
+        android:layout_toRightOf="@+id/playerbtn"
+        android:layout_toEndOf="@+id/playerbtn"
+        android:background="#14c0c0c0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/transferb"
+        android:scaleType="fitCenter"
+
+        />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/settingsbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="59dp"
+        android:background="#14c0c0c0"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/settingsb"
+        android:scaleType="fitCenter"
+      />
+
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/closebtn"
+        android:layout_alignTop="@+id/settingsbtn"
+        android:layout_toRightOf="@+id/settingsbtn"
+        android:layout_toEndOf="@+id/settingsbtn"
+        android:background="#14c0c0c0"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/closeb"
+        android:scaleType="fitCenter"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Добро пожаловать в Sound sender!"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textSize="17pt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+</RelativeLayout>
